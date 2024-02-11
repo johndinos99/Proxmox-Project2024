@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: lightgrey;
+}
+
+.container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container header {
+    font-size: 28px;
+    font-weight: 600;
+    color: #232836;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.container form {
+    margin-top: 30px;
+}
+
+form .field-input {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.field-input label {
+    color: #232836;
+}
+
+form :where(.field-input input) {
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    margin-top: 8px;
+    border: 1px solid #CACACA;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.field-input input:focus {
+    border-bottom-width: 2px;
+}
+
+form .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+form button {
+    height: 50px;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #0171d3;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+form button:hover {
+    background-color: #016dcb;
+}
+
+.link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.link a,
+.link span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #232836;
+}
+
+.link a {
+    color: #0171d3;
+    text-decoration: none;
+}
+
+.password-toggle-icon {
+    position: absolute;
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    top: 60px;
+    left: 90%;
+    transform: translateY(-50%);
+}
+
+.confirm-password-toggle-icon {
+    position: absolute;
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    top: 60px;
+    left: 90%;
+    transform: translateY(-50%);
+}
+
+.field-error {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    color: red;
+    font-size: 13px;
+}
+
+.field-error .error-icon {
+    margin-right: 3px;
+    font-size: 14px;
+}
+
+.field-error .error-text {
+    flex-grow: 1;
+}
+
+.field-input input[haserror="true"] {
+    border: 1px solid red;
+}
+
+.banner {
+    --font-size: 13px;
+
+    padding: var(--font-size);
+    background: #eeeeee;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    font-size: var(--font-size);
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.error-banner-icon {
+    margin-right: 3px;
+    font-size: 14px;
+}
+
+.success-banner-icon {
+    margin-right: 3px;
+    font-size: 14px;
+}
+
+.banner-text {
+    flex-grow: 1;
+}
+
+.banner-error {
+    background: #ffcccc;
+    color: #460000;
+    border-color: #ff0000;
+}
+
+.banner-success {
+    background: #dbffd9;
+    color: #054700;
+    border-color: #4bb543;
+}

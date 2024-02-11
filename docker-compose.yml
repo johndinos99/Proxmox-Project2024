@@ -1,0 +1,26 @@
+version: '3.10'
+
+services:
+  django-backend:
+    container_name: proxmox-project-backend
+    build:
+      context: ./django-backend
+      dockerfile: Dockerfile
+    image: django-backend:0.0.1
+    ports: 
+      - '8000:8000'
+
+  react-frontend:
+    container_name: proxmox-project-frontend
+    build:
+      context: ./react-frontend
+      dockerfile: Dockerfile
+    image: react-frontend:0.0.1
+    ports: 
+      - '3000:3000'
+    stdin_open: true
+    tty: true
+    environment:
+      - HTTPS=true
+      - SSL_CRT_FILE=/app/ssl/<your .crt file>
+      - SSL_KEY_FILE=/app/ssl/<your .key file>

@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Database
+*.db
+*.sqlite3
+
+# Logs and media files
+*.log
+media/
+
+# Compiled Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Translation files
+*.pot
+*.mo
+
+# Virtual environment
+pyenv/
+
+# Visual Studio Code
+.vscode/
+
+# macOS system file
+.DS_Store
+
+# Environment variable file
+.env
+
+/ssl

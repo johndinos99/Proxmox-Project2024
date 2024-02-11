@@ -1,0 +1,15 @@
+__pycache__
+pyenv
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.pot
+*.mo
+*.git
+*.vscode
+.DS_Store
+.env
+.gitignore

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    width: 100%;
+    background: #1a1a1a;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.user-pic {
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.nav-link {
+    width: 100%;
+    text-align: right;
+}
+
+.nav-link li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+/* Link is "a" tag*/
+.nav-link li a {
+    transition: all 0.3s ease 0s;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link li a:hover {
+    color: #016dcb;
+}
+
+.create_vm {
+    width: 100%;
+    margin-right: auto;
+    cursor: default;
+}
+
+button {
+    padding: 9px 25px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+    color: white;
+    background-color: #0171d3;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #016dcb;
+}
+
+.sub-menu-wrapper {
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu-wrapper.open-menu {
+    max-height: 400px;
+}
+
+.sub-menu {
+    background: rgb(250, 255, 254);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 6px;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.user-info {
+    display: flex;
+    text-align: center;
+}
+
+.user-info h3 {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+.user-info img {
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 15px;
+}
+
+.sub-menu-link {
+    display: flex;
+    align-items: center;
+    
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+
+.sub-menu-link p {
+    width: 80%;
+    margin-left: 8px;
+}
+
+.icon-container {
+    width: 40px;
+    height: 40px;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-menu-link span {
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span {
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p {
+    font-weight: 600;
+}
